@@ -79,10 +79,10 @@
             <button class="tablinks" onclick="openCity(event, 'Dirigible')">Dirigible</button>
         </div>
 
-        <div id="Plain" class="tabcontent">
+        <div id="Plain" class="tabcontent" style="width:100%;height:100%">
             <h3>Plain</h3>
             <p>Monaco-editor</p>
-            <div id="container" style="position:fixed;width:100%;height:100%"></div>
+            <div id="container" style="width:100%;height:100%"></div>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.10.1/min/vs/loader.js" integrity="sha256-PwMxLuduSzsT9fefu+Nz/M8z0sYHV9Pp77VxsOxk1Pc="
                 crossorigin="anonymous"></script>
             <script>
@@ -95,7 +95,8 @@
                     var editor = monaco.editor.create(document.getElementById('container'), {
                         value: [
                             'function x() {',
-                            '\tprint("Hello world!");',
+                            '\tprint("Hello WebIDE!");',
+                            '\tprint("Monaco Editor on WebIDE!");',
                             '}',
                             'x();'
                         ].join('\n'),
