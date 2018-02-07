@@ -23,6 +23,8 @@
     <style>
         body {
             font-family: Arial;
+            width: auto;
+            height: auto;
         }
 
         h1 {
@@ -33,6 +35,15 @@
             color: blue;
         }
 
+        header {
+            border: 6px groove lightGrey;
+            background-color: lightgoldenrodyellow;
+        }
+
+        footer {
+            border: 6px groove lightGrey;
+            background-color: lightgoldenrodyellow;
+        }
         /* Style the tab */
 
         .tab {
@@ -78,7 +89,7 @@
 </head>
 
 <body>
-    <div style="width:100%;height:100%">
+    <div style="width:100%;height:100%;border:6px groove lightBlue;">
         <header>
                 <center><h1>WebIDE</h1></center>
         </header>
@@ -140,9 +151,9 @@
             <h3>Dirigible</h3>
             <iframe width="100%" height="500" src="http://dirigible.eclipse.org/"></iframe>
         </div>
+        <hr>
         <footer>
-            <hr>
-            <center>Created by Josephworks</center>
+            <center><strong>Written by Josephworks</strong></center>
             <center>2018</center>
         </footer>
     </div>
