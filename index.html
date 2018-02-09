@@ -280,7 +280,6 @@
             vertical-align: middle;
         }
 
-
         /**
  * Font normalization inspired by YUI Library's fonts.css: developer.yahoo.com/yui/
  */
@@ -308,7 +307,6 @@
         samp {
             font-family: monospace, sans-serif;
         }
-
 
         /**
  * Minimal base styles.
@@ -444,7 +442,6 @@
             background-color: #f0dddd;
         }
 
-
         /* These selection declarations have to be separate
    No text-shadow: twitter.com/miketaylr/status/12228805301
    Also: hot pink! */
@@ -517,7 +514,6 @@
             color: #036;
         }
 
-
         /**
  * Primary styles
  *
@@ -549,9 +545,7 @@
             margin: 0;
             padding: 0;
             border-style: solid;
-
             background: #fff;
-
             /*
   background: #2c609b;
   box-shadow: inset 0 -200px 100px #032b5c, inset -100px 100px 100px #2073b5, inset 100px 200px 100px #1f9bb1;
@@ -564,7 +558,6 @@
   -webkit-box-shadow: inset 0 -200px 100px #2b5c03, inset -100px 100px 100px #73b520, inset 100px 200px 100px #9bb11f;
 */
         }
-
 
         /* Enable Flexible Box Layout */
 
@@ -636,7 +629,6 @@
 
         .noVNC-window {
             background: #ccc;
-
             border: 1px solid rgba(255, 255, 255, 0.6);
             background: rgba(192, 232, 192, 0.75);
             border-radius: 8px;
@@ -647,7 +639,6 @@
             -webkit-box-shadow: 0 2px 16px #000, 0 0 1px #000, 0 0 1px #000;
             -moz-box-shadow: 0 2px 16px #000, 0 0 1px #000, 0 0 1px #000;
             text-shadow: 0 0 15px #fff, 0 0 15px #fff;
-
         }
 
         .noVNC-window input {
@@ -676,7 +667,6 @@
             -moz-box-shadow: 0 0 5px #fff, 0 0 1px #fff, inset 0 1px 2px #aaa;
             text-shadow: none;
         }
-
 
         .noVNC-control-bar div {
             margin-right: 10px;
@@ -751,18 +741,6 @@
         #noVNC_connectTimeout {
             width: 2em;
         }
-
-
-
-
-
-
-
-
-
-
-
-
 
         /**
  * Non-semantic helper classes: please define your styles before this section.
@@ -840,8 +818,6 @@
             zoom: 1;
         }
 
-
-
         /**
  * Media queries for responsive design.
  *
@@ -860,12 +836,9 @@
    consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
 
         @media screen and (max-device-width: 480px) {
-
-
             /* Uncomment if you don't want iOS and WinMobile to mobile-optimize the text for you: j.mp/textsizeadjust */
             /* html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; } */
         }
-
 
         /**
  * Print styles.
@@ -943,7 +916,6 @@
             <button class="tablinks" onclick="openCity(event, 'Dirigible')">Dirigible</button>
             <button class="tablinks" onclick="openCity(event, 'VNC')">VNC</button>
         </div>
-
         <div id="Plain" class="tabcontent">
             <h3>Plain</h3>
             <div id="container" style="height:80%;">Monaco-editor</div>
@@ -984,13 +956,11 @@
                 });
             </script>
         </div>
-
         <div id="Codenvy" class="tabcontent">
             <h3>Codenvy</h3>
             <p>Codenvy is an online webide powered by Docker.</p>
             <iframe width="100%" height="500" src="http://codenvy.io"></iframe>
         </div>
-
         <div id="Dirigible" class="tabcontent">
             <h3>Dirigible</h3>
             <iframe width="100%" height="500" src="http://dirigible.eclipse.org/"></iframe>
@@ -1023,7 +993,6 @@
                             <div class="noVNC-status">
                                 <span id="noVNC_status" class="noVNC-status-normal">Loading</span>
                             </div>
-
                             <div class="noVNC_buttons_right">
                                 <nobr>
                                     <span id="noVNC_mouse_buttons" style="display: none;">
@@ -1033,7 +1002,6 @@
                                     </span>
                                 </nobr>
                             </div>
-
                             <div class="noVNC_buttons_right">
                                 <div class="noVNC-menu">
                                     <input type=button value="Settings" id="menuButton" onclick="UI.clickSettingsMenu();">
@@ -1050,16 +1018,13 @@
                                             <li>
                                                 <input id="noVNC_connectTimeout" type="input"> Connect Timeout (s)</li>
                                             <hr>
-
                                             <li>
                                                 <select id="noVNC_stylesheet" name="vncStyle">
                                                     <option value="default">default</option>
                                                 </select> Style</li>
-
                                             <li>
                                                 <select id="noVNC_logging" name="vncLogging">
                                                 </select> Logging</li>
-
                                             <hr>
                                             <li>
                                                 <input type="button" id="noVNC_apply" value="Apply" onclick="UI.settingsApply()">
@@ -1068,19 +1033,16 @@
                                     </span>
                                 </div>
                             </div>
-
                             <div class="noVNC_buttons_right">
                                 <input type=button value="CtrlAltDel" id="sendCtrlAltDelButton" onclick="UI.sendCtrlAltDel();">
                             </div>
                         </div>
                         <!--! end of #status-bar -->
-
                         <div id="noVNC_viewport">
                             <canvas id="noVNC_canvas" width="640px" height="480px">
                                 Canvas not supported.
                             </canvas>
                         </div>
-
                     </div>
                     <!--! end of noVNC_app (status bar and viewport) -->
                 </div>
