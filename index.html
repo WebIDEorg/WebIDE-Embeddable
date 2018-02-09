@@ -12,7 +12,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="shortcut icon" href="https://raw.githubusercontent.com/josephworks/WebIDE/master/favicon.ico">
     <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/novnc/noVNC/html5-test/apple-touch-icon.png">
-    <link rel="stylesheet" src="https://raw.githubusercontent.com/novnc/noVNC/html5-test/css/style.css">
     <script src="https://raw.githubusercontent.com/novnc/noVNC/html5-testjs/libs/modernizr-1.7.min.js"></script>
     <script>
         var INCLUDE_URI = "js/";
@@ -53,6 +52,7 @@
             evt.currentTarget.className += " active";
         }
     </script>
+    <!-- NoVNC head end -->
     <style>
         body {
             font-family: Arial;
@@ -261,19 +261,6 @@
         .no-boxshadow textarea:invalid {
             background-color: #f0dddd;
         }
-        ::-moz-selection {
-            background: #FF5E99;
-            color: #fff;
-            text-shadow: none;
-        }
-        ::selection {
-            background: #FF5E99;
-            color: #fff;
-            text-shadow: none;
-        }
-        a:link {
-            -webkit-tap-highlight-color: #FF5E99;
-        }
         button {
             width: auto;
             overflow: visible;
@@ -338,7 +325,6 @@
             -webkit-box-orient: vertical;
             -moz-box-orient: vertical;
             -ms-box-orient: vertical;
-            box-orient: vertical;
         }
         /* Enabled horizontal FBL layout */
         .noVNC-status-bar,
@@ -346,7 +332,6 @@
             -webkit-box-orient: horizontal;
             -moz-box-orient: horizontal;
             -ms-box-orient: horizontal;
-            box-orient: horizontal;
         }
         /* Enabled horizontally centered FBL layout */
         .container,
@@ -354,7 +339,6 @@
             -webkit-box-align: center;
             -moz-box-align: center;
             -ms-box-align: center;
-            box-align: center;
         }
         /* Enabled vertically centered FBL layout */
         .container,
@@ -362,7 +346,6 @@
             -webkit-box-pack: center;
             -moz-box-pack: center;
             -ms-box-pack: center;
-            box-pack: center;
         }
         /* Set FBL flex ratio to 1 */
         .noVNC-status,
@@ -370,7 +353,6 @@
             -webkit-box-flex: 1;
             -moz-box-flex: 1;
             -ms-box-flex: 1;
-            box-flex: 1;
         }
         .noVNC-window {
             background: #ccc;
